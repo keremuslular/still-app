@@ -4,7 +4,6 @@ layout: default
 ---
 
 <style>
-  .nav-links { margin-bottom: 1.5em; font-size: 0.95em; }
   .page-header-custom { text-align: center; margin-bottom: 0.25em; }
   .page-header-custom h1 { font-size: 2em; margin: 0; }
   .page-meta { text-align: center; color: #6e7781; font-size: 0.92em; margin-bottom: 2em; }
@@ -17,12 +16,6 @@ layout: default
   .contact-section { text-align: center; margin-top: 2em; color: #57606a; font-size: 0.95em; }
   .contact-section a { color: #0969da; }
 </style>
-
-<p class="nav-links">
-  <a href="./">Home</a> · 
-  <a href="./privacy">Privacy</a> · 
-  <a href="./support">Support</a>
-</p>
 
 <div class="page-header-custom"><h1>Privacy Policy</h1></div>
 <p class="page-meta">Last updated: Febuary 7, 2026</p>

@@ -4,8 +4,6 @@ layout: default
 ---
 
 <style>
-  .nav-links { margin-bottom: 1.5em; font-size: 0.95em; }
-
   .app-hero { text-align: center; padding: 2.5em 0 1.5em; }
   .app-hero .app-icon { width: 128px; height: 128px; border-radius: 28px; display: block; margin: 0 auto 1.25em; box-shadow: 0 8px 32px rgba(0,0,0,0.15); }
   .app-hero h1 { margin: 0 0 0.3em; font-size: 2.4em; }
@@ -31,12 +29,6 @@ layout: default
     .feature-grid { grid-template-columns: 1fr; }
   }
 </style>
-
-<p class="nav-links">
-  <a href="./">Home</a> · 
-  <a href="./privacy">Privacy</a> · 
-  <a href="./support">Support</a>
-</p>
 
 <div class="app-hero">
   <img src="assets/icon.png" alt="Still app icon" class="app-icon" width="128" height="128">
