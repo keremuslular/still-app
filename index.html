@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Still — Calm Breathing & Reset</title>
-  <meta name="description" content="Your private companion for daily calm.">
+  <title>Still — Calm Breathing & Stress Reset</title>
+  <meta name="description" content="One tap when stress hits. Guided breathing to reset. Insights to understand your patterns.">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
@@ -21,14 +21,22 @@
     /* Header */
     .site-header {
       background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
-      color: #fff; text-align: center; padding: 1.5em 1em 1.3em;
+      color: #fff;
+      text-align: center;
+      padding: 1.5em 1em 1.3em;
     }
     .site-header h1 { font-size: 3.1em; font-weight: 700; margin-bottom: 0.5em; }
     .site-nav { display: flex; justify-content: center; gap: 0.5em; flex-wrap: wrap; }
     .nav-pill {
-      display: inline-block; padding: 0.35em 1.1em; border-radius: 20px;
-      color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.88em; font-weight: 500;
-      transition: background 0.15s, color 0.15s; border: 1px solid rgba(255,255,255,0.25);
+      display: inline-block;
+      padding: 0.35em 1.1em;
+      border-radius: 20px;
+      color: rgba(255,255,255,0.8);
+      text-decoration: none;
+      font-size: 0.88em;
+      font-weight: 500;
+      transition: background 0.15s, color 0.15s;
+      border: 1px solid rgba(255,255,255,0.25);
     }
     .nav-pill:hover { background: rgba(255,255,255,0.15); color: #fff; }
     .nav-pill.active { background: rgba(255,255,255,0.22); color: #fff; border-color: rgba(255,255,255,0.4); }
@@ -54,6 +62,19 @@
     }
     .btn-app-store:hover { background: #424245; }
 
+    /* Version badge */
+    .version-badge {
+      display: inline-block;
+      padding: 0.25em 0.8em;
+      background: linear-gradient(135deg, #2c5364, #56ab91);
+      color: #fff;
+      border-radius: 20px;
+      font-size: 0.78em;
+      font-weight: 600;
+      margin-bottom: 1.5em;
+      letter-spacing: 0.02em;
+    }
+
     /* Features */
     .section-title { font-size: 1.5em; margin: 2em 0 1em; text-align: center; font-weight: 700; }
     .feature-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 2em; }
@@ -65,10 +86,10 @@
     .feature-icon { font-size: 1.5em; flex-shrink: 0; line-height: 1; margin-top: 0.05em; }
     .feature-text strong { display: block; color: #1d1d1f; font-size: 0.93em; margin-bottom: 0.15em; }
     .feature-text span { color: #6e6e73; font-size: 0.86em; line-height: 1.45; }
-    .feature-card.full-width { grid-column: 1 / -1; justify-content: center; background: #eef6ee; }
-    .feature-card.full-width:hover { background: #ddeedd; }
+    .feature-card.full-width { grid-column: 1 / -1; }
+    .feature-card.highlight { background: #e8f4f0; }
+    .feature-card.highlight:hover { background: #d6ece6; }
 
-    /* Footer */
     /* Developer section */
     .developer-section { margin-top: 2.5em; padding-top: 2em; border-top: 1px solid #e8e8ed; }
     .developer-label {
@@ -117,7 +138,8 @@
       <img src="assets/icon.png" alt="Still app icon" class="app-icon" width="128" height="128">
       <h2>Your private companion for daily calm.</h2>
       <p class="tagline">Breathe. Reset. Understand.</p>
-      <p class="subtitle">One tap when stress hits. Guided breathing to reset. Insights to understand your patterns.</p>
+      <p class="subtitle">One tap when stress hits. Guided breathing to reset. Insights to understand your patterns — all without accounts or tracking.</p>
+      <span class="version-badge">New in 1.2 — Custom Breathing & New Languages</span><br>
       <a href="https://apps.apple.com/app/id6755608523" class="btn-app-store" target="_blank" rel="noopener">Download on the App Store</a>
     </div>
 
@@ -133,29 +155,64 @@
       <div class="feature-card">
         <div class="feature-icon">🌬️</div>
         <div class="feature-text">
-          <strong>5 Breathing Techniques</strong>
-          <span>Box, 4-7-8, Coherent, Calming, and Energizing exercises</span>
+          <strong>Guided Breathing</strong>
+          <span>Box, 4-7-8, Coherent, Calming, Energizing — or build your own custom technique</span>
         </div>
       </div>
       <div class="feature-card">
         <div class="feature-icon">📊</div>
         <div class="feature-text">
           <strong>Insights & Patterns</strong>
-          <span>See when and where your stress peaks over time</span>
+          <span>See when and where your stress peaks — by hour, weekday, or last 7 days</span>
         </div>
       </div>
       <div class="feature-card">
         <div class="feature-icon">⌚</div>
         <div class="feature-text">
-          <strong>Apple Watch App</strong>
-          <span>Log stress and breathe directly from your wrist</span>
+          <strong>Apple Watch</strong>
+          <span>Log stress and breathe from your wrist with widgets and complications</span>
         </div>
       </div>
-      <div class="feature-card full-width">
+      <div class="feature-card highlight">
+        <div class="feature-icon">❤️</div>
+        <div class="feature-text">
+          <strong>Heart Rate Monitoring</strong>
+          <span>HealthKit detects stress spikes and suggests a breathing break</span>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🌍</div>
+        <div class="feature-text">
+          <strong>Multiple Languages</strong>
+          <span>Available in English, Turkish, French, and Spanish</span>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📱</div>
+        <div class="feature-text">
+          <strong>Widgets & Siri</strong>
+          <span>Home screen widgets, lock screen widgets, and Siri Shortcuts</span>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🏆</div>
+        <div class="feature-text">
+          <strong>Achievements</strong>
+          <span>30 milestones across streaks, sessions, and breathing — share your progress</span>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🎨</div>
+        <div class="feature-text">
+          <strong>Make It Yours</strong>
+          <span>Custom accent colors, themes, time format, and your own breathing technique</span>
+        </div>
+      </div>
+      <div class="feature-card">
         <div class="feature-icon">🔒</div>
         <div class="feature-text">
           <strong>100% Private</strong>
-          <span>Your data stays on your device. No accounts, no tracking.</span>
+          <span>Data stays on your device. Optional Face ID lock. No accounts.</span>
         </div>
       </div>
     </div>
